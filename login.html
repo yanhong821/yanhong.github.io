@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<body>
+		<div class="top">
+		</div>
+		<div class="container">
+			<div class="logo">
+				<img src="img/site-logo.png" />
+			</div>
+			<div class="content">
+				<div class="left-pic">
+					<img src="img/3.jpg" />
+				</div>
+				<div class="right-login">
+					<div class="login-title">
+						<h3>用户登录</h3>
+					</div>
+					<div class="signin">
+						<form action="" class="form-signin" id="login" role="form" method="">
+							<input type="text" class="form-control required" name="username" placeholder="手机号/会员名/邮箱"/>
+							<input type="password" class="form-control required" name="password" placeholder="密码"/>
+							<button class="btn btn-lg btn-warning btn-block submit" type="submit">登录</button>
+							<a href="#">忘记密码？</a>
+							<div class="checkbox">
+								<span>还不是本站会员？立即</span>
+								<a href="register.html" class="go-reg">注册</a>
+							</div>
+						</form>
+						<div class="signin-foot">
+							<p>您还可以用合作伙伴账号登录</p>
+							<a href="#">QQ登录</a>
+							<a href="#">新浪微博</a>
+							<a href="#">支付宝</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+		<!--表单自动验证-->
+		<script type="text/javascript" src="js/jquery.validate.js" ></script>
+		<!--修改提示信息-->
+		<script type="text/javascript" src="js/validate_tip.js" ></script>
+		<script>
+			$('#login').validate();
+		</script>
+	</body>
+</html>

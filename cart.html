@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	</head>
+	<body>
+		<div id="top">
+			<div class="topbar">
+				<div class="user-entry">
+					<span>登录</span>
+					<span>注册</span>
+				</div>
+				<div class="quick-menu">
+					<dl class="my-cart">
+						<dt class="incart-text">
+							<img src="img/icon_cart_alt.png" class="icon" />
+							购物车<em>0</em>件
+							<i></i>
+						</dt>
+						<dd>
+							<div class="incart-goods-box">
+								<div class="incart-goods-title">
+									<h4>最新加入的商品</h4>
+								</div>
+								<div class="incart-goods">
+									<img src="img/loading.gif" />
+								</div>
+								<div class="checkout">
+									<div class="total-price">
+										<span>
+										共0种商品
+										</span>
+									</div>
+									<div class="btn-cart">
+										<a href="#">结算购物车中的商品</a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">用户中心</a>
+							<i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a href="#">商品收藏</a></li>
+								<li><a href="#">店铺收藏</a></li>
+								<li><a href="#">收藏米米乐</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">我的订单</a>
+							<i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a href="#">待付款订单</a></li>
+								<li><a href="#">待收货订单</a></li>
+								<li><a href="#">待评价订单</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#">客户服务</a>
+							<i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a href="#">帮助中心</a></li>
+								<li><a href="#">客服中心</a></li>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">在线客服</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<em class="icon-nav-top"></em>
+							<a href="#">网站导航</a>
+							<i></i>
+						</dt>
+						<dd>
+							<ul>
+								<li><a href="#">导购频道</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="ad"></div>
+		<div id="header">
+			<span class="site-logo">
+				<a href="#"><img src="img/logo.png"/></a>
+			</span>
+			<div class="head-search-bar">
+				<form class="search-form">
+					<input type="text" class="input-text" placeholder="搜索 吃货专场 试试" />
+					<a href="javascript:;" class="input-submit">搜索</a>
+				</form>
+				<div class="keyword">
+					<span>iphone7</span>
+					<span>随机立减</span>
+					<span>手机热卖</span>
+					<span>iphone7</span>
+					<span>随机立减</span>
+					<span>手机热卖</span>
+					<span>iphone7</span>
+					<span>随机立减</span>
+					<span>手机热卖</span>
+				</div>
+			</div>
+			<div class="head-user-menu">
+				<ul>
+					<li><a href="#"><img src="img/baoyou.png">认证包邮</a></li>
+					<li><a href="#"><img src="img/jiameng.png">招商加盟</a></li>
+					<li><a href="#"><img src="img/xuqiu.png">需求发布</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航-->
+		<div id="nav-wrapper">
+			<div class="nav-container clearx">
+				<div class="categorys">
+					<div class="cg-title">
+						<div class="cg-icon">
+							<img src="img/classical.png"/>
+						</div>
+						<a href="javascript:;">所有商品分类</a>
+						<i class="arrow"></i>
+					</div>
+					<div class="cg-content">
+						<div class="cg-con-nav">
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-1.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">手机数码</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-2.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">电脑/办公</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-3.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">食品/酒饮/生鲜/特产</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-4.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">服装/鞋帽/箱包</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-5.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">母婴/玩具</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-6.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">家居/生活/服务</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-7.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">个护美妆/清洁用品</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<div class="cg-icon">
+									<img src="img/category-pic-8.jpg">
+								</div>
+								<div class="nav-item-tx">
+									<a href="javascript:;">家用电器</a>
+								</div>
+							</div>
+						</div>
+						<div class="cg-con-drop">
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+							<div class="drop-item">
+								<div class="drop-item-wrap">
+									<div class="drop-wrap-title">
+										<span></span>
+										<a href="#">手机数码</a>
+									</div>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a>手机通讯</a>
+											<span class="arrow">></span>
+										</dt>
+										<dd>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+											<a href="#">iPhone</a>
+											<a href="#">三星</a>
+											<a href="#">小米</a>
+											<a href="#">魅族</a>
+											<a href="#">华为</a>
+										</dd>
+									</dl>
+								</div>	
+							</div>
+						</div>	
+					</div>
+				</div>
+			    <ul class="site-menu">
+			    	<li class="first">首页</li>
+			    	<li>米活动</li>
+			    	<li>乐社区</li>
+			    	<li>商家入驻</li>
+			    	<li>8.8天天抢</li>
+			    	<li>团购</li>
+			    	<li>米金融</li>
+			    </ul>
+			</div>
+		</div>
+		<!--购物车-->
+		<div class="container">
+			
+			<div class="cart">
+				
+				<div class="cart-main">
+					<!--标题-->
+					<div class="cart-main-title">
+						<ul class="clear">
+							<li class="td td-checkbox">
+								<input type="checkbox" class="select-all-btn"/>
+								<span>全选</span>
+							</li>
+							<li class="td td-gname">
+								<div class="td-inner">商品</div>
+							</li>
+							<li class="td td-gstyle">商品信息</li>
+							<li class="td td-gprice">单价</li>
+							<li class="td td-gamount">数量</li>
+							<li class="td td-gmoney">金额</li>
+							<li class="td td-option">操作</li>
+						</ul>
+					</div>
+					<!--商品区-->
+					<div class="cart-main-content">
+						
+					</div>
+					<!--操作区-->
+					<div class="cart-option clear">
+						<div class="options clear">
+							<div class="options-item select-all">
+								<input type="checkbox" class="select-all-btn">
+								<span>全选</span>
+							</div>
+							<div class="options-item delete">
+								<a href="#">删除</a>
+							</div>
+						</div>
+						<div class="cart-info clearfix">
+							<div class="info-item goods-amount">
+								已选商品<span class="user-goods-amount">0</span>件
+							</div>
+							<div class="info-item goods-money">
+								合计：不含运费<span class="user-goods-money">0.00</span>
+							</div>
+							<div class="info-item go-pay">结算</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="js/cart.js" ></script>
+	</body>
+</html>

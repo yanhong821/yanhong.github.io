@@ -1,0 +1,21 @@
+{
+	"10001": {
+		"goods-id": 10001,
+		"goods-name": "微软Surface Pro 4 Win10 平板电脑 12.3英寸 M3 4G/128G储存",
+		"goods-price": 7888.00,
+		"goods-sale": 5078.00,
+		"size": {
+			"1000101": "4G/128G",
+			"1000102": "8G/256G",
+			"1000103": "16G/512G"
+		},
+		"color": {
+			"id": "10001001",
+			"small-pic": "img/g4-small.jpg",
+			"large-pic": "img/g4.jpg",
+			"color-type": "银色"
+		},
+		"stock": 9861
+	}
+
+}
